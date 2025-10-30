@@ -1,4 +1,173 @@
-.body {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: auto;
-    width: auto;
+    padding: 0 500px;
+    background: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.active:hover {
+    color: #259bca;
+}
+
+.nav .unactive {
+    color: #8b74ba;
+}
+
+.container {
+    text-align: center;
+    background-image: linear-gradient(45deg, #4f4760, #2c2933);
+    color: white;
+    padding-bottom: 60px;
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin: auto;
+    font-family: Roboto, sans-serif;
+}
+
+p {
+    font-size: 1.25rem;
+    margin: 8px auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: 230px;
+    border-radius: 20px;
+    padding: 20px 20px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.white-box {
+    margin-top: -40px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.white-box h2 {
+    font-size: 1.2rem;
+    color: inherit;
+    margin: 0;
+}
+
+.white-box h3 {
+    font-size: 2.5rem;
+    margin: 5px 0;
+}
+
+.white-box p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #777;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.plan ul li {
+    font-family: 'Open Sans', sans-serif;
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+button {
+    border: none;
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.free button, .free .white-box{
+    color: #8a6fcf;
+}
+
+.plus button .plus .white-box{
+    color: #4cc399;
+}
+
+.standart button, .standart .white-box{
+    color: #35a4f3;
+}
+
+.business button, .business .white-box{
+    color: #f49b33;
+}
+
+.free button:hover{ background-color: rgba(138, 111, 207, 0.1); mix-blend-mode: multiply;}  
+.plus button:hover{ background-color: rgba(76, 195, 153, 0.1); mix-blend-mode: multiply;}   
+.standart button:hover{ background-color: rgba(53, 164, 243, 0.1); mix-blend-mode: multiply;} 
+.business button:hover{ background-color: rgba(244, 155, 51, 0.1); mix-blend-mode: multiply;} 
+
+.free {
+    background-color: #8a6fcf;
+}
+
+.plus {
+    background-color: #4cc399;
+}
+
+.standart {
+    background-color: #35a4f3;
+}
+
+.business {
+    background-color: #f49b33;
+}
+
+.white-box {
+    color: #333;
 }
