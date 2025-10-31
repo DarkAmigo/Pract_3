@@ -131,26 +131,44 @@ button {
     transition: 0.3s;
 }
 
-.free button, .free .white-box{
+.free button,
+.free .white-box {
     color: #8a6fcf;
 }
 
-.plus button .plus .white-box{
+.plus button .plus .white-box {
     color: #4cc399;
 }
 
-.standart button, .standart .white-box{
+.standart button,
+.standart .white-box {
     color: #35a4f3;
 }
 
-.business button, .business .white-box{
+.business button,
+.business .white-box {
     color: #f49b33;
 }
 
-.free button:hover{ background-color: rgba(138, 111, 207, 0.1); mix-blend-mode: multiply;}  
-.plus button:hover{ background-color: rgba(76, 195, 153, 0.1); mix-blend-mode: multiply;}   
-.standart button:hover{ background-color: rgba(53, 164, 243, 0.1); mix-blend-mode: multiply;} 
-.business button:hover{ background-color: rgba(244, 155, 51, 0.1); mix-blend-mode: multiply;} 
+.free button:hover {
+    background-color: rgba(138, 111, 207, 0.1);
+    mix-blend-mode: multiply;
+}
+
+.plus button:hover {
+    background-color: rgba(76, 195, 153, 0.1);
+    mix-blend-mode: multiply;
+}
+
+.standart button:hover {
+    background-color: rgba(53, 164, 243, 0.1);
+    mix-blend-mode: multiply;
+}
+
+.business button:hover {
+    background-color: rgba(244, 155, 51, 0.1);
+    mix-blend-mode: multiply;
+}
 
 .free {
     background-color: #8a6fcf;
@@ -170,4 +188,99 @@ button {
 
 .white-box {
     color: #333;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 0 100px;
+    }
+
+    .plans {
+        gap: 20px;
+    }
+
+    .plan {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .plan {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .white-box h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .plan {
+        width: 100%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .white-box h3 {
+        font-size: 1.8rem;
+    }
 }
