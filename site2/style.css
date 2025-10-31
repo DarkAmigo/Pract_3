@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    flex: 0.35;
+    background-color: white;
+}
+
+.bottom {
+    flex: 0.65;
+    background-image: url("/imgs/fon_site_2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottom::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.grid-container {
+    margin-top: -245px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    gap: 20px;
+    z-index: 2;
+    background-color: transparent;
+    color: white;
+}
+
+.grid-container>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    background-color: rgba(198, 166, 107, 0.9);
+    color: white;
+    padding: 40px 50px;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.box1 h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.box1 .aligned-text, .box6 .aligned-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 2;        
+}
+
+.box2 img,
+.box3 img,
+.box4 img,
+.box5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Центрований текст */
+.center-text {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    color: #d1a75c;
+    font-size: 3.75rem;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Нижній текстовий блок */
+.box6 {
+    grid-column: 2 / 4;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 30px;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.box6 .aligned-text {
+    margin: 0 40px 0 0;
+}
+
+button {
+    margin: 30px auto 0 0;
+    font-family: 'Open Sans', sans-serif;
+    border-width: 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.875rem;
+    border-style: solid;
+    border-color: #333;
+    color: #333;
+    background-color: transparent;
+    padding: 10px 30px;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
