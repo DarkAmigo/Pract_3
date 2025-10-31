@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 center img5"
+        "img6 img7 img8";
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box1 img{
+    width: 262px;
+    height: 308px;
+    position: relative;
+    object-fit: cover;
+    margin-top: 385px;
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.box2 img{
+    width: 372px;
+    height: 356px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 170px;
+}
+
+.box3 img{
+    height: 256px;
+    width: 300px;
+    position: relative;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: 0;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    top: 170px
+}
+
+.box4 img{
+    width: 564px;
+    height: 277px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 220px;
+}
+
+.box5 img{
+    width: 564px;
+    height: 277px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 200px;
+}
+
+.box6 img{
+    width: 280px;
+    height: 171px;
+    position: relative;
+    margin: 0 auto 25px 80px;
+}
+
+.box7 img{
+    width: 372px;
+    height: 356px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 45px;
+}
+
+.box8 img{
+    height: 222px;
+    width: 228px;
+    position: relative;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: 0;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    bottom: 120px;
+}
+
+.box1 {
+    grid-area: img1;
+    justify-self: end; 
+    align-self: start;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+}
+
+.box2 {
+    grid-area: img2;
+    justify-self: center;
+    display: inline-block;
+}
+
+.box3 {
+    grid-area: img3;
+}
+
+.box4 {
+    grid-area: img4;
+}
+
+.box5 {
+    grid-area: img5;
+}
+
+.box6 {
+    grid-area: img6;
+    justify-self: end; 
+    align-self: start;
+}
+
+.box7 {
+    grid-area: img7;
+    justify-self: center;
+}
+
+.box8 {
+    grid-area: img8;
+}
+
+.center-box {
+    width: 372px;
+    height: 277px;
+    display: flex;
+    flex-direction: column;
+    grid-area: center;
+    background: white;
+    justify-content: center;
+    position: relative;
+    grid-area: 2 / 2;
+    z-index: 10; 
+    transform: scale(1.4, 1.4); 
+}
+
+.center-box h2 {
+    text-align: center;
+    margin: 35px 0 0;
+    font-weight: 400;
+    font-size: 2.25rem;
+    font-family: Roboto, sans-serif;
+    color: #222;
+}
+
+.center-box .text_align {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    white-space: nowrap;
+    margin: 20px 0 0;
+    color: black;
+}
+
+.center-box button {
+    margin: 30px auto 35px;
+    position: relative;
+    background-color: #f94e3f;
+    color: white;
+    border-color: #f94e3f;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.center-box button:hover {
+    background-color: #e23d30;
+}
